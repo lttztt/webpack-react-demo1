@@ -19,7 +19,20 @@ module.exports = {
           presets: ["env", "react"],
           plugins: ["transform-object-rest-spread"]
         }
-      }
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader',
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('dart-sass'),
+            },
+          },
+        ],
+      },
     ]
   },
   plugins: [
