@@ -5,8 +5,10 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash].js'
+    // filename: '[name].[hash].js'
+    filename: 'main.js'
   },
+  watch: true,
   module: {
     rules: [
       {
@@ -15,7 +17,7 @@ module.exports = {
         include: [path.resolve(__dirname, "src")] ,
         exclude: [path.resolve(__dirname, "node_modules")],
         options: {
-          presets: ["env"],
+          presets: ["env", "react"],
           plugins: ["transform-object-rest-spread"]
         }
       }

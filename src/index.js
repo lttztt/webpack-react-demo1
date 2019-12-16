@@ -1,8 +1,8 @@
+import React from "react"
+import ReactDom from "react-dom"
 
+let n = 1;
 
-let a = {n: 'c', b: 'fuck'}
-
-let b = {a: '18'}
-
-
-let c = {...a, ...b}
+ReactDom.render(
+<div>hello {n}</div>, document.getElementById('app')
+)
