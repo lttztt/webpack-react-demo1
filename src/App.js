@@ -33,7 +33,7 @@ export default class App extends React.Component {
         <div>
           <h3>99乘法表</h3>
           <table className="myTable" border="1">
-            <tbody>{trs}</tbody>
+            <tbody onClick={()=>{console.log('hello')}}>{trs}</tbody>
           </table>
         </div>
       </div>
