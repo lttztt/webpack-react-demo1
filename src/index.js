@@ -1,9 +1,9 @@
 import React from "react"
 import ReactDom from "react-dom"
 
-console.log('fuck');
-let n = 2;
+import App from './App.js'
 
 ReactDom.render(
-<div>liuzhe hello {n}</div>, document.getElementById('app')
+  <App />
+, document.getElementById('app')
 )
