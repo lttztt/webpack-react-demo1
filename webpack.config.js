@@ -1,5 +1,5 @@
 const path = require('path')
-
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
@@ -8,7 +8,6 @@ module.exports = {
     // filename: '[name].[hash].js'
     filename: 'main.js'
   },
-  watch: true,
   module: {
     rules: [
       {
@@ -22,5 +21,11 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'lttztt - web',
+      template: 'src/index.html'
+    }),
+  ],
 }
