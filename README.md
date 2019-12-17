@@ -10,3 +10,12 @@
  添加对拓展运算符的支持
 
  - babel-plugin-transform-object-rest-spread
+
+
+ ## 二
+
+ 添加react 和 react-dom
+
+ - 添加基本app组件
+ - 添加简单的时间监听
+ - 添加99乘法表以使用jsx语法
